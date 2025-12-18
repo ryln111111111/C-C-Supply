@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>C & C Supply | Oilfield & Industrial Supplies</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* RESET */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: #f2f2f2;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    /* HEADER */
+    header {
+      background: linear-gradient(135deg, #000 0%, #2b2b2b 100%);
+      color: #fff;
+      padding: 4rem 1rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    header::after {
+      content: "";
+      position: absolute;
+      right: -100px;
+      top: -100px;
+      width: 300px;
+      height: 300px;
+      background: #b30000;
+      opacity: 0.15;
+      transform: rotate(45deg);
+    }
+
+    .header-inner {
+      max-width: 1100px;
+      margin: auto;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      letter-spacing: 2px;
+    }
+
+    header p {
+      margin: 1rem 0;
+      font-size: 1.2rem;
+      color: #ddd;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #b30000;
+      color: #fff;
+      padding: 0.9rem 1.8rem;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 4px;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover { background: #8f0000; }
+
+    /* SECTIONS */
+    section {
+      padding: 4rem 1rem;
+      position: relative;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+      color: #111;
+    }
+
+    .subtext {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 2.5rem;
+      color: #555;
+    }
+
+    /* SIDE ACCENT BAR */
+    .accent-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 6px;
+      height: 100%;
+      background: #b30000;
+    }
+
+    /* ABOUT */
+    .about-box {
+      background: #fff;
+      padding: 2rem;
+      border-left: 6px solid #b30000;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    /* SERVICES */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.8rem;
+    }
+
+    .card {
+      background: #fff;
+      border-top: 5px solid #b30000;
+      padding: 1.5rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover { transform: translateY(-5px); }
+
+    .card h3 { margin-bottom: 0.6rem; }
+
+    /* STATS BAR */
+    .stats {
+      background: #111;
+      color: #fff;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      text-align: center;
+    }
+
+    .stat {
+      padding: 2rem 1rem;
+      border-right: 1px solid #333;
+    }
+
+    .stat:last-child { border-right: none; }
+
+    .stat h3 {
+      font-size: 2rem;
+      color: #b30000;
+    }
+
+    /* CONTACT */
+    .contact-box {
+      background: #fff;
+      padding: 2rem;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+
+    .contact-box p { margin-bottom: 0.5rem; }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+
+    input, textarea {
+      padding: 0.8rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1rem;
+    }
+
+    button {
+      background: #000;
+      color: #fff;
+      padding: 0.9rem;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    button:hover { background: #333; }
+
+    /* FOOTER */
+    footer {
+      background: #000;
+      color: #aaa;
+      text-align: center;
+      padding: 1.2rem;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 800px) {
+      .contact-box { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <h1>C & C SUPPLY</h1>
+    <p>Oilfield • Industrial • Safety Supplies | Casper, Wyoming</p>
+    <a href="#contact" class="btn">Request a Quote</a>
+  </div>
+</header>
+
+<section>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <h2>Who We Are</h2>
+    <p class="subtext">Reliable industrial supply solutions backed by experience, inventory, and 24/7 service.</p>
+    <div class="about-box">
+      <p>
+        C & C Supply provides oilfield and industrial parts to keep operations running without delay.
+        From pipe, valves, and fittings to safety gear and custom fasteners, we stock what you need
+        and deliver it when time matters most.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section style="background:#e6e6e6;">
+  <div class="container">
+    <h2>What We Supply</h2>
+    <p class="subtext">Built for the field. Trusted by industry professionals.</p>
+    <div class="cards">
+      <div class="card">
+        <h3>Pipe, Valves & Fittings</h3>
+        <p>Carbon steel, stainless, and specialty fittings ready for demanding environments.</p>
+      </div>
+      <div class="card">
+        <h3>Safety Equipment</h3>
+        <p>PPE, monitors, and jobsite safety gear that meets industry standards.</p>
+      </div>
+      <div class="card">
+        <h3>Custom Studs & Fasteners</h3>
+        <p>In‑house custom manufacturing for precise project requirements.</p>
+      </div>
+      <div class="card">
+        <h3>24/7 Emergency Delivery</h3>
+        <p>Day or night delivery to minimize downtime and keep crews moving.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="stats">
+  <div class="stat"><h3>24/7</h3><p>Emergency Service</p></div>
+  <div class="stat"><h3>Thousands</h3><p>Parts in Stock</p></div>
+  <div class="stat"><h3>Casper</h3><p>Locally Owned</p></div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <h2>Contact C & C Supply</h2>
+    <div class="contact-box">
+      <div>
+        <p><strong>Address:</strong> 3350 E Yellowstone Hwy, Casper, WY</p>
+        <p><strong>Phone:</strong> (307) 315‑6714</p>
+        <p><strong>After Hours:</strong> (307) 277‑7215</p>
+        <p><strong>Hours:</strong> Mon–Fri 8am–5pm</p>
+      </div>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="4" placeholder="How can we help?" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2025 C & C Supply, LLC • Oilfield & Industrial Supply
+</footer>
+
+</body>
+</html>
